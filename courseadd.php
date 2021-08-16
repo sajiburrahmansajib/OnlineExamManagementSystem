@@ -4,6 +4,42 @@
         <link rel="stylesheet" href="styles/w3.css">
         <title>Online Exam System</title>
     </head>
+     <style> 
+        .img {
+    background-image:url('./image/admin2.jpg');
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+}
+        .mar
+        {
+                margin-left: 45%;
+                
+        }
+        .mar2
+        {
+            margin-left: 41%;
+        }
+        .mar3
+        {
+            margin-top:5%;
+        }
+     </style>
+     <body class="img">
+         <ul class="w3-navbar w3-black">
+             
+             
+             <li><a href="welcomeadmin.php"><?php echo $_SESSION['admin_name'];?></a></li>
+
+             <li class="w3-right w3-teal"><a href="adminlogout.php">Log Out</a></li>
+        </ul>
+         <div style="margin-left:33%">
+            <a class="w3-btn w3-teal" href="addteacher.php">Assign Teacher</a>
+             <a class="w3-btn w3-teal" href="manageuser.php">Manage User</a>
+             <a class="w3-btn w3-teal w3-text-blue" href="#">Course Add</a>
+             <a class="w3-btn w3-teal" href="questionadd.php">Question Add</a>
+        
+        </div>
+          <div style="margin-left:35%">
 
          <form class="w3-container w3-card-4 w3-half" action="" method="post">
              
