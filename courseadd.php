@@ -8,6 +8,42 @@ if (!isset($_SESSION['admin_name']))
   }
     
     ?>
+ <?php
+$errorMassage ="";
+$succ = "";
+$emailErr="";
+$u_id="";
+if(isset($_POST['submit'])){
+
+        if (empty($_POST['cid']) || empty($_POST['cname'])){
+
+            $errorMassage='fild is empty! ';
+                        
+        }
+                
+                        else
+                         {            
+            $cid = $_POST['cid'];
+                        $cname=$_POST['cname'];
+            
+
+            $sql = "INSERT INTO course (course_id,course_name)
+                VALUES ('".$cid."','".$cname."')";
+
+                if (mysqli_query($conn, $sql)) {
+                     $succ = "New course added successfully";
+                                     
+                } else {
+                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                }
+                        }
+        }
+    
+?>
+
+
+
+   
 
 <html>
     <head>
