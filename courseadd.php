@@ -1,3 +1,14 @@
+<?php include_once('connection.php'); ?>
+<?php
+session_start();
+if (!isset($_SESSION['admin_name'])) 
+    {
+      header('Location: admin.php');
+      exit;
+  }
+    
+    ?>
+
 <html>
     <head>
         <meta charset="UTF-8">
