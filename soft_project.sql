@@ -3,7 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2019 at 06:52 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 5.6.36
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbms_project`
+-- Database: `soft_project`
 --
 
 -- --------------------------------------------------------
@@ -27,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admins`
 --
+create database soft_project;
+use soft_project;
 
 CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
